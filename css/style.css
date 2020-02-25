@@ -1,0 +1,203 @@
+/*login*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: #038ade;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.login-box {
+    margin-top: 150px;
+    flex-basis: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.login-box h2 {
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    color: #555;
+    padding-bottom: 20px;
+    margin: 0 0 20px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+}
+
+input[type=submit] {
+    background-color: #038ade;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*dashboard*/
+header {
+    background: #038ade;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 20px;
+}
+
+/* mengatur lebar menu 20% dg background hitam */
+aside {
+    flex: 20%;
+    background: #222;
+}
+
+/* mengatur lebar konten utama 80% dengan background putih*/
+section.main {
+    flex: 80%;
+    background: #fff;
+    padding: 20px;
+    min-height: 580px;
+}
+
+footer {
+    background: #ccc;
+    color: #555;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width:700px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* Navigasi */
+.menu {
+    padding: 0;
+}
+
+.menu li {
+    border-bottom: 1px dotted #444;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 20px;
+}
+
+.menu a:hover {
+    background: #000;
+}
+
+
+
+
+
+
+
+/*tabel*/
+.judul {
+    color: #555;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.tabel {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.tabel th,
+.tabel td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.tabel th {
+    background: #eee;
+}
+
+.tombol {
+    display: inline-block;
+    max-width: 150px;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    background: #038ade;
+    cursor: pointer;
+}
+
+.tombol.edit,
+.tombol.hapus {
+    padding: 10px 15px;
+    font-size: 12px;
+}
+
+.tombol.hapus {
+    background: #fc4c4c;
+}
+
+
+
+
+
+
+
+/*form*/
+.form-group {
+    clear: both;
+}
+
+.form-group label {
+    display: block;
+    padding: 15px 0;
+    float: left;
+    width: 30%;
+    font-weight: bold;
+}
+
+.form-group .input {
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+input[type=radio] {
+    width: 50px;
+}
+
+.tombol.reset {
+    background: #fb8307;
+}
+
+@media (max-width: 700px) {
+
+    .form-group label,
+    .form-group .input {
+        width: 100%;
+    }
+}
+
+.error {
+    color: red;
+}
